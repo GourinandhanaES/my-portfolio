@@ -9,11 +9,18 @@ const sora = Sora({
 })
 
 import Nav from '../components/Nav.js'
+import Header from '../components/Header.js'
+import TopLeftImg from '../components/TopLeftImg.js'
 
 const Layout = ({children}) => {
-  return <div>
-    <Nav/>
-  </div>;
+  return (
+    <div className={`page bg-site text-white bg-cover bg-no-repeat ${sora.variable} font-sora relative`}>
+      <TopLeftImg/>
+      <Nav/>
+      <Header/>
+      {children}
+    </div>
+  );
 };
 
 export default Layout;
