@@ -21,7 +21,7 @@ function MyApp({ Component, pageProps }) {
         </motion.div>
      </AnimatePresence>
     </Layout>
-  )
+  );
 }
 
 export default MyApp;
